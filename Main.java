@@ -22,9 +22,12 @@ public class Main {
                System.out.println("YOu have arrived at the chum bucket");
             } 
       }
-      else if ("right") {
+      else if (command.equals("right")) {
          System.out.println("You have reached an intersection");
-         
+         command = getCommand("Go jelly fishing or town");
+      }
+      if (command.equals("jelly fishing")) {
+         System.out.println("you got stung by a jelly fish and DIED XO");
       }
    }
    else {
