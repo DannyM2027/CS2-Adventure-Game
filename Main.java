@@ -16,11 +16,20 @@ public class Main {
          System.out.println("You have reached an intersection");
          command = getCommand("Go up or down?");
             if (command.equals("up")) {
-               System.out.println("You are now in the Krusty krab, cook or leave?");
+               System.out.println("You are now in the Krusty krab");
+               command = getCommand("cook or leave?");
+            }
+            
+            if (command.equals("cook")) {
+               System.out.println("you made krabby patties and won!");
+            }
+            else if (command.equals("leave")) {
+               System.out.println("You tried to leave but got eaten by Mrs puff, YOU LOSE");
             }
             else if (command.equals("down")) {
-               System.out.println("YOu have arrived at the chum bucket");
+               System.out.println("You have arrived at the chum bucket and died to the chum");
             } 
+         
       }
       else if (command.equals("right")) {
          System.out.println("You have reached an intersection");
@@ -28,6 +37,9 @@ public class Main {
       }
       if (command.equals("jelly fishing")) {
          System.out.println("you got stung by a jelly fish and DIED XO");
+      }
+      else if (command.equals("town")) {
+         System.out.println("You went to town and had fun, YOU WIN!");
       }
    }
    else {
